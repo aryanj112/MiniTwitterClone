@@ -10,12 +10,24 @@ function App() {
     <div className="app">
       <h1>Twitter Clone</h1>
       <div className="feed">
-        {/* Here you will use the data from the 'tweetsData' variable and populate every tweet
-          that you received from the 'backend' (data.ts).
-         */}
+        {
+
+
+       
+         
+        }
       </div>
     </div>
   );
 }
 
+
+ /* Here you will use the data from the 'tweetsData' variable and populate every tweet
+          that you received from the 'backend' (data.ts).
+         */
+
+
+
 export default App;
+
+//          tweetsData.map((tweet) => <Tweet />);
