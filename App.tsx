@@ -11,10 +11,16 @@ function App() {
       <h1>Twitter Clone</h1>
       <div className="feed">
         {
+          tweetsData.map(tweet => (
+            <Tweet 
+              key = {tweet.id}
+              username = {tweet.timestamp}
+              content = {tweet.content}
+              likes = {tweet.likes}
+              timestamp = {tweet.timestamp}
+            /> 
+          ))
 
-
-       
-         
         }
       </div>
     </div>

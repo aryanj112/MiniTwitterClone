@@ -11,12 +11,20 @@ display a red heart "❤️" make sure to increase or decrease the like counter 
 Theres a 'tweet' class you can use to style your tweet.
 */
 
-function Tweet(){
+type Tweet = {username: string, content: string, likes: number, timestamp: string}
 
+function Tweet({username, content, likes, timestamp}: Tweet){
 
     return(
         <>
+            <h1> {username} </h1>
+            <p> 
+                {content} 
+                {likes}
+                {timestamp}
+            </p>
         </>
+       
     );
 }
 
