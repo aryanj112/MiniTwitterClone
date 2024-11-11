@@ -16,14 +16,14 @@ type Tweet = {username: string, content: string, likes: number, timestamp: strin
 function Tweet({username, content, likes, timestamp}: Tweet){
 
     return(
-        <>
+        <div className = "tweet">
             <h1> {username} </h1>
             <p> 
                 {content} 
                 {likes}
                 {timestamp}
             </p>
-        </>
+        </div>
        
     );
 }
