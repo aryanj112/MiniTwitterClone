@@ -14,13 +14,12 @@ function App() {
           tweetsData.map(tweet => (
             <Tweet 
               key = {tweet.id}
-              username = {tweet.timestamp}
+              username = {tweet.username}
               content = {tweet.content}
               likes = {tweet.likes}
               timestamp = {tweet.timestamp}
             /> 
           ))
-
         }
       </div>
     </div>
@@ -28,12 +27,9 @@ function App() {
 }
 
 
- /* Here you will use the data from the 'tweetsData' variable and populate every tweet
-          that you received from the 'backend' (data.ts).
-         */
-
-
+ /*
+  Here you will use the data from the 'tweetsData' variable and populate every tweet
+  that you received from the 'backend' (data.ts).
+*/
 
 export default App;
-
-//          tweetsData.map((tweet) => <Tweet />);
